@@ -5,7 +5,7 @@ import lombok.Getter;
 @Getter
 public enum SubjectGroup {
     A("toan", "vat_li", "hoa_hoc"),
-    A1("toan", "vat_li", "ngoai_ngu"),
+//    A1("toan", "vat_li", "ngoai_ngu"),
     B("toan", "hoa_hoc", "sinh_hoc"),
     C("nguVan", "lich_su", "dia_li"),
     D("toan", "ngu_van", "ngoai_ngu");
