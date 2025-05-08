@@ -1,1 +1,17 @@
-spring.application.name=test
+spring:
+  application:
+    name: GoldenOwlTest
+
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: ${JPA_DDL}
+    properties:
+      hibernate:
+        jdbc:
+          batch_size: 1000
+        order_inserts: true
+        order_updates: true

@@ -5,12 +5,13 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.experimental.FieldDefaults;
 
+import java.util.Map;
+
 @Getter
 @Builder
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class SubjectScoreStatistics {
-    Long above8;
-    Long from6To8;
-    Long from4To6;
-    Long below4;
+public class TopScore {
+    private String sbd;
+    private Double totalScore;
+    private Map<String, Double> subjectScores;
 }
